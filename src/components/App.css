@@ -31,10 +31,9 @@ path {
     background-color: rgb(72, 50, 72) !important;
 }
 
-
-/* svg {
+span {
     background-color: black !important;
-} */
+}
 
 .ce-chat-form-container {
     background-color: rgb(72, 50, 72) !important;
@@ -42,6 +41,7 @@ path {
 
 #new-chat-plus-button {
     background-color: white !important;
+    border-radius: 50% !important;
 }
 
 
@@ -66,6 +66,7 @@ path {
 #ce-send-message-button {
     background-color: rgb(72, 50, 72) !important;
     background: rgb(72, 50, 72) !important;
+    margin-bottom: 0px !important;
 }
 
 .ce-chats-container {
@@ -73,8 +74,8 @@ path {
 }
 
 .ce-active-chat-card {
-    background-color: #1597E5 !important;
-    border: 4px solid #1597E5 !important;
+    background-color: #cabcdc !important;
+    border: 4px solid #cabcdc !important;
     border-radius: 0px !important;
 }
 
