@@ -4,7 +4,7 @@
     font-family: Avenir, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
-
+*/
 /* Chats Page */
 
 .chats-page {
@@ -13,30 +13,31 @@
     left: 0px;
     width: 100vw;
     height: 100vh;
-    background-color: #334756;
+    background-color: #7554a0;
 }
 
 .nav-bar {
     width: 100%;
     height: 66px;
-    background-color: #002766;
+    background-color: rgb(72, 50, 72);
 }
 
 .logo-tab {
     position: absolute;
-    left: 22px;
     top: 12px;
     font-size: 32px;
     font-weight: 700;
+    font-family: 'Pacifico', cursive;
     color: white;
+    left: 5%;
 }
 
 .logout-tab {
     position: absolute;
-    top: 22px;
-    right: 22px;
     color: white;
     cursor: pointer;
+    top: 2%;
+    right: 5%;
 }
 
 ::-webkit-scrollbar {
@@ -44,6 +45,27 @@
     /* Remove scrollbar space */
     background: transparent;
     /* Optional: just make scrollbar invisible */
+}
+
+button {
+    transition: all .5s ease;
+    color: #fff;
+    border: 3px solid white;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 17px;
+    background-color: transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+    margin-bottom: 3%;
+}
+
+button:hover {
+    color: #001F3F;
+    background-color: #fff;
 }
 
 
@@ -80,11 +102,13 @@
 
 .facebook {
     background-color: #3b5998;
+    padding: 5px;
 }
 
 .google {
     background-color: #3b5998;
     color: white;
+    padding: 5px;
 }
 
 #loading-container {
@@ -93,7 +117,7 @@
     bottom: 0px;
     left: 0px;
     right: 0px;
-    background-color: rgb(255, 255, 255, 0.22);
+    background-color: rgb(240, 240, 240);
 }
 
 #loading-icon {

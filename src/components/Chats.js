@@ -7,6 +7,7 @@ import { useAuth } from "../contexts/AuthContext";
 import axios from "axios";
 
 
+
 const Chats = () =>{
     const history = useHistory();
     const { user }  = useAuth();
@@ -77,18 +78,14 @@ const Chats = () =>{
         return "Loading............"
     }
 
-    // if(){
-    //  return 'Loading......'
-    // }
-
     return (
          <div className="chats-page">
               <div className="nav-bar">
                    <div className="logo-tab">
-                       Chat-app
+                       QuickChat
                    </div>
                    <div onClick  = {handlelogout} className="logout-tab">
-                       Logout
+                      <button>Logout</button>
                    </div>
               </div>
               <ChatEngine 
