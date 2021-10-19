@@ -93,6 +93,7 @@ const Chats = () =>{
                   projectID="b372f60b-c3a4-44d3-ab4b-d1e326e86ce0"
                   userName={user.email}
                   userSecret={user.uid}
+                  offset={6} 
               />
          </div>
     );

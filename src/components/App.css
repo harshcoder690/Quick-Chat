@@ -9,6 +9,13 @@
     background-color: rgb(72, 50, 72) !important;
 }
 
+h2 {
+    color: rgb(72, 50, 72);
+    line-height: 1.5 !important;
+    font-size: 1.5rem !important;
+    font-family: 'Pacifico', cursive;
+}
+
 .ce-chat-title-text {
     color: rgb(72, 50, 72);
     font-family: 'Balsamiq Sans', cursive;

@@ -72,7 +72,7 @@ button:hover {
 /* Login Page */
 
 #login-page {
-    background-image: linear-gradient(#40a9ff, #096dd9);
+    background-image: linear-gradient(#C33764, #1D2671);
     position: absolute;
     top: 0px;
     bottom: 0px;
@@ -101,14 +101,15 @@ button:hover {
 }
 
 .facebook {
-    background-color: #3b5998;
-    padding: 5px;
+    background-color: rgb(72, 50, 72);
+    padding: 15px;
 }
 
 .google {
-    background-color: #3b5998;
+    background-color: rgb(72, 50, 72);
     color: white;
-    padding: 5px;
+    margin-top: 10px;
+    padding: 15px;
 }
 
 #loading-container {

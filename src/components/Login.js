@@ -11,7 +11,7 @@ const Login = () => {
     return (
        <div id = "login-page">
            <div id = "login-card">
-               <h2>Welcome to chat-app!</h2>
+               <h2>Welcome to QuickChat!</h2>
                <div className = "login-button google" 
                onClick={async () =>
             await auth.signInWithRedirect(
@@ -19,7 +19,7 @@ const Login = () => {
             )
           }
                >
-                  <GoogleOutlined />Sign In With Google
+                  <i class="fab fa-google"></i> Sign In With Google
                </div>
                <br />
                <br />
@@ -31,7 +31,7 @@ const Login = () => {
             );
           }}
                >
-                  <FacebookOutlined />Sign In With Facebook
+                  <i class="fab fa-facebook"></i> Sign In With Facebook
                </div>
            </div>
        </div>
