@@ -36,7 +36,7 @@ const Chats = () =>{
     
         const loadData = async () => {
           try {
-            let res = await axios.get("https://api.chatengine.io/users/me", {
+            let res = axios.get("https://api.chatengine.io/users/me/", {
               headers: {
                 "project-id": "b372f60b-c3a4-44d3-ab 4b-d1e326e86ce0",
                 "user-name": user.email,
@@ -45,7 +45,8 @@ const Chats = () =>{
             });
             setLoading(false);
             console.log("Response", res);
-          } catch (error) {
+          } 
+          catch (error) {
             let formdata = new FormData();
             formdata.append("email", user.email);
             formdata.append("username", user.email);
