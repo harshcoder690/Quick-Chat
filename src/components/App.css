@@ -42,6 +42,10 @@ span {
     background-color: black !important;
 }
 
+.ce-chat-card {
+    background-color: rgb(72, 50, 72) !important;
+}
+
 .ce-chat-form-container {
     background-color: rgb(72, 50, 72) !important;
 }
