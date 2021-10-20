@@ -11,7 +11,7 @@ import axios from "axios";
 const Chats = () =>{
     const history = useHistory();
     const { user }  = useAuth();
-    const [loading,setLoading] = useState(true);
+    const [setLoading] = useState(true);
 
     console.log("Fetched user", user);
 
