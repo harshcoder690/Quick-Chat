@@ -1,4 +1,4 @@
-import React , {useEffect} from "react";
+import React , {useState,useEffect} from "react";
 import { useHistory } from "react-router-dom";
 import { ChatEngine } from 'react-chat-engine';
 import { auth } from './firebase';
@@ -11,7 +11,7 @@ import axios from "axios";
 const Chats = () =>{
     const history = useHistory();
     const { user }  = useAuth();
-    // const [loading,setLoading] = useState(true);
+    const [loading,setLoading] = useState(true);
 
     console.log("Fetched user", user);
 
@@ -43,7 +43,7 @@ const Chats = () =>{
                 "user-secret": user.uid,
               },
             });
-            // setLoading(false);
+            setLoading(false);
             console.log("Response", res);
           } 
           catch (error) {
@@ -62,7 +62,7 @@ const Chats = () =>{
                   },
                 })
                 .then(() => {
-                  // setLoading(false);
+                  setLoading(false);
                   console.log("success here");
                 })
                 .catch((error) => console.log(error));
@@ -75,7 +75,7 @@ const Chats = () =>{
       }, [user, history]);
     
 
-    if(!user){
+    if(!user || loading){
         return "Loading............"
     }
 
